@@ -15,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shao Kiat | AI & Sales Engineer",
-  description: "Portfolio of Shao Kiat, a Data Scientist transitioning to AI & Sales Engineering.",
+  title: "Shao Kiat | Data Scientist",
+  description: "Portfolio of Shao Kiat, a seasoned Data Scientist with a passion for AI Engineering.",
 };
 
 export default function RootLayout({

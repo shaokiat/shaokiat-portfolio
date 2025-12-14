@@ -20,7 +20,7 @@ export default function Contact() {
 
                     <h2 className="text-3xl md:text-5xl font-bold mb-6">Let's Collaborate</h2>
                     <p className="text-gray-400 mb-8 text-lg">
-                        I combine the technical depth of a Data Scientist with the strategic mindset of a Sales Engineer to deliver impactful AI solutions.
+                        I combine the technical depth of a Data Scientist with the strategic mindset of a AI Engineer to deliver impactful AI solutions.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
