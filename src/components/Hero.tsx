@@ -43,13 +43,13 @@ export default function Hero() {
                     </div> */}
 
                     <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/60 mb-6 tracking-tight">
-                        Engineering Impact <br className="hidden md:block" />
-                        with Generative AI
+                        Bridging Data Science <br className="hidden md:block" />
+                        & Business Value
                     </h1>
 
                     <p className="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-                        Data Scientist turned AI Engineer. I build scalable intelligent systems that transform how businesses operate.
-                        Turning state-of-the-art LLMs into real-world value.
+                        Transforming complex data into clear insights and scalable AI solutions.
+                        Passionate about driving impact where technical innovation meets business strategy.
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4">
