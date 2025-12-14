@@ -6,6 +6,8 @@ import Image from "next/image";
 import { ArrowRight, Bot, Database, Sparkles } from "lucide-react";
 
 export default function Hero() {
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
     return (
         <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden py-20">
             {/* Background Gradients */}
@@ -21,7 +23,7 @@ export default function Hero() {
                 >
                     <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-full blur-lg opacity-50 animate-pulse" />
                     <Image
-                        src="/profile.jpg"
+                        src={`${basePath}/profile.jpg`}
                         alt="Shao Kiat"
                         width={160}
                         height={160}
