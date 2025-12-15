@@ -16,7 +16,19 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Shao Kiat | Data Scientist",
-  description: "Portfolio of Shao Kiat, a seasoned Data Scientist with a passion for AI Engineering.",
+  description: "Portfolio of Shao Kiat, a seasoned Data Scientist with a passion for AI Engineering. Showcasing projects in Generative AI, Data Science, and Sales Engineering.",
+  keywords: ["Data Scientist", "AI Engineer", "Sales Engineer", "Portfolio", "Machine Learning", "Generative AI", "Next.js"],
+  icons: {
+    icon: "/icon.svg",
+  },
+  openGraph: {
+    title: "Shao Kiat | AI & Data Science Portfolio",
+    description: "Bridging technical depth with business strategy. Explore my projects in AI, Data Science, and Engineering.",
+    url: "https://shaokiat.github.io/shaokiat-portfolio",
+    siteName: "Shao Kiat Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
