@@ -14,12 +14,14 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: "Shao Kiat | Data Scientist",
   description: "Portfolio of Shao Kiat, a seasoned Data Scientist with a passion for AI Engineering. Showcasing projects in Generative AI, Data Science, and Sales Engineering.",
   keywords: ["Data Scientist", "AI Engineer", "Sales Engineer", "Portfolio", "Machine Learning", "Generative AI", "Next.js"],
   icons: {
-    icon: "/icon.svg",
+    icon: `${basePath}/icon.svg`,
   },
   openGraph: {
     title: "Shao Kiat | AI & Data Science Portfolio",
