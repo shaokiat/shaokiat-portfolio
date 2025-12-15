@@ -44,7 +44,7 @@ export default function Experience() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="relative pl-8 md:pl-0"
+                            className="relative md:pl-0"
                         >
                             {/* Timeline Line (Hidden on mobile for cleaner look or adapted) */}
                             <div className="hidden md:block absolute left-[50%] top-0 bottom-0 w-px bg-gradient-to-b from-blue-500/50 to-transparent -translate-x-1/2" />
