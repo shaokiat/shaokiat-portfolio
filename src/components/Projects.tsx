@@ -1,10 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, BarChart3, Brain, BookOpen } from "lucide-react";
-import Image from "next/image";
+import { Github, BarChart3, Brain, BookOpen, ArrowRight } from "lucide-react";
 
-const projects = [
+interface Project {
+    title: string;
+    description: string;
+    tags: string[];
+    links: { demo?: string; github?: string };
+    icon: React.ReactNode;
+    cta?: {
+        label: string;
+        link: string;
+        type: "blog" | "github";
+    };
+}
+
+const projects: Project[] = [
     {
         title: "N8N Options Strategy Assistant",
         description: "Automated workflow using N8N to query real-time price and volatility indices. Analyzes market conditions to generate optimal options strategies based on user-defined directional bias.",
@@ -13,18 +25,28 @@ const projects = [
         icon: <BarChart3 className="w-10 h-10 text-blue-400" />
     },
     {
-        title: "Financial Report RAG Analyst",
-        description: "Building a RAG pipeline to ingest and analyze quarterly earnings reports (10-K). Allows natural language querying of financial metrics and strategic insights from unstructured PDF data.",
-        tags: ["LangChain", "Vector DB", "OpenAI", "Python"],
+        title: "BTO Grant & Eligibility Assistant (DSPy)",
+        description: "An exploration of DSPy capabilities for optimizing RAG pipelines. This assistant helps users navigate the complexities of HDB BTO grants and eligibility criteria using automated prompt tuning.",
+        tags: ["DSPy", "RAG Optimization", "Python", "AI Engineering"],
         links: { demo: "#", github: "#" },
-        icon: <Brain className="w-10 h-10 text-purple-400" />
+        icon: <Brain className="w-10 h-10 text-purple-400" />,
+        cta: {
+            label: "View Code",
+            link: "#",
+            type: "github"
+        }
     },
     {
         title: "Technical Blog",
         description: "A collection of technical articles and tutorials on Data Science, AI, and Software Engineering. Sharing knowledge and insights from real-world projects and experiments.",
         tags: ["Technical Writing", "Data Science", "AI", "Tutorials"],
         links: { demo: "https://shaokiat.github.io/shaokiat-blog/blog/", github: "#" },
-        icon: <BookOpen className="w-10 h-10 text-green-400" />
+        icon: <BookOpen className="w-10 h-10 text-green-400" />,
+        cta: {
+            label: "Explore Articles",
+            link: "https://shaokiat.github.io/shaokiat-blog/blog/",
+            type: "blog"
+        }
     }
 ];
 
@@ -73,14 +95,19 @@ export default function Projects() {
                             </div>
 
                             <div className="flex items-center gap-4 mt-auto">
-                                {project.links.github && project.links.github !== "#" && (
-                                    <a href={project.links.github} target="_blank" rel="noopener noreferrer" className="text-sm flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
-                                        <Github className="w-4 h-4" /> Code
-                                    </a>
-                                )}
-                                {project.links.demo && project.links.demo !== "#" && (
-                                    <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="text-sm flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
-                                        <ExternalLink className="w-4 h-4" /> Live Demo
+                                {project.cta && (
+                                    <a
+                                        href={project.cta.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={`w-full py-3 px-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 group/btn ${project.cta.type === "blog"
+                                            ? "bg-green-500/10 border border-green-500/20 text-green-400 hover:bg-green-500/20"
+                                            : "bg-purple-500/10 border border-purple-500/20 text-purple-400 hover:bg-purple-500/20"
+                                            }`}
+                                    >
+                                        {project.cta.type === "github" && <Github className="w-4 h-4" />}
+                                        {project.cta.label}
+                                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                                     </a>
                                 )}
                             </div>
