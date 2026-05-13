@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Bot, Database, Sparkles } from "lucide-react";
+import { ArrowRight, Bot, Database, Cloud } from "lucide-react";
 
 export default function Hero() {
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -37,12 +37,10 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300 mb-6 backdrop-blur-sm">
-                        <span className="relative flex h-2 w-2">
-                            <Sparkles className="w-3 h-3 text-blue-400" />
-                        </span>
-                        AI Engineer / Data Scientist
-                    </div> */}
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300 mb-6 backdrop-blur-sm">
+                        <Cloud className="w-3 h-3 text-blue-400" />
+                        Solutions Engineer · AI &amp; Cloud Architecture
+                    </div>
 
                     <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/60 mb-6 tracking-tight">
                         Bridging Data Science <br className="hidden md:block" />
@@ -87,8 +85,8 @@ export default function Hero() {
                         <span className="text-xs">AI / ML</span>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                        <Sparkles className="w-6 h-6" />
-                        <span className="text-xs">Solutions</span>
+                        <Cloud className="w-6 h-6" />
+                        <span className="text-xs">Cloud Architecture</span>
                     </div>
                 </motion.div>
             </div>

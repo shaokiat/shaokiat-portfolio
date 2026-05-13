@@ -18,9 +18,9 @@ interface Project {
 
 const projects: Project[] = [
     {
-        title: "N8N Options Strategy Assistant",
-        description: "Automated workflow using N8N to query real-time price and volatility indices. Analyzes market conditions to generate optimal options strategies based on user-defined directional bias.",
-        tags: ["N8N", "Automation", "Finance API", "No-Code"],
+        title: "theta-agent — Options Strategy Agent",
+        description: "CLI-based AI agent that autonomously researches a ticker and proposes a concrete options strategy. Uses tool calls to fetch live price data, news, options chain, and greeks via yfinance. Persistent per-ticker state stores past sessions and positions, injecting prior context into each new run for more grounded, context-aware analysis.",
+        tags: ["AI Agent", "Python", "Anthropic API", "yfinance", "Options Greeks"],
         links: { demo: "#", github: "#" },
         icon: <BarChart3 className="w-10 h-10 text-blue-400" />
     },
