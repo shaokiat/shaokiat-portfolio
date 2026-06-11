@@ -1,14 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, BarChart3, Brain, BookOpen, ArrowRight } from "lucide-react";
+import { Github, ArrowRight, BarChart3, Brain, BookOpen } from "lucide-react";
 
 interface Project {
     title: string;
-    description: string;
+    problem: string;
+    built: string;
     tags: string[];
-    links: { demo?: string; github?: string };
     icon: React.ReactNode;
+    accent: string;
     cta?: {
         label: string;
         link: string;
@@ -18,36 +19,50 @@ interface Project {
 
 const projects: Project[] = [
     {
-        title: "theta-agent — Options Strategy Agent",
-        description: "CLI-based AI agent that autonomously researches a ticker and proposes a concrete options strategy. Uses tool calls to fetch live price data, news, options chain, and greeks via yfinance. Persistent per-ticker state stores past sessions and positions, injecting prior context into each new run for more grounded, context-aware analysis.",
-        tags: ["AI Agent", "Python", "Anthropic API", "yfinance", "Options Greeks"],
-        links: { demo: "#", github: "#" },
-        icon: <BarChart3 className="w-10 h-10 text-blue-400" />
-    },
-    {
-        title: "BTO Grant & Eligibility Assistant (DSPy)",
-        description: "An exploration of DSPy capabilities for optimizing RAG pipelines. This assistant helps users navigate the complexities of HDB BTO grants and eligibility criteria using automated prompt tuning.",
-        tags: ["DSPy", "RAG Optimization", "Python", "AI Engineering"],
-        links: { demo: "#", github: "#" },
-        icon: <Brain className="w-10 h-10 text-purple-400" />,
+        title: "theta-agent",
+        problem:
+            "Researching an options trade means juggling price data, news, chains and greeks across half a dozen tabs, every single time.",
+        built:
+            "A CLI agent on the Anthropic API that researches a ticker on its own via tool calls (live prices, news, options chains and greeks through yfinance) and proposes a concrete strategy. It keeps per-ticker memory of past sessions and positions, so each new run picks up where the last one left off.",
+        tags: ["AI Agent", "Anthropic API", "Tool Use", "Python", "Options Greeks"],
+        icon: <BarChart3 className="w-10 h-10 text-blue-400" />,
+        accent: "text-blue-400",
         cta: {
             label: "View Code",
             link: "#",
-            type: "github"
-        }
+            type: "github",
+        },
+    },
+    {
+        title: "BTO Grant & Eligibility Assistant",
+        problem:
+            "HDB BTO grants and eligibility rules are a maze. Most applicants can't tell what they qualify for without reading dozens of policy pages.",
+        built:
+            "A RAG assistant whose pipeline is tuned with DSPy's automated prompt optimization instead of hand-written prompts. I built it to see how far that approach could go compared to manual prompt engineering.",
+        tags: ["DSPy", "RAG", "Prompt Optimization", "Python"],
+        icon: <Brain className="w-10 h-10 text-purple-400" />,
+        accent: "text-purple-400",
+        cta: {
+            label: "View Code",
+            link: "#",
+            type: "github",
+        },
     },
     {
         title: "Technical Blog",
-        description: "A collection of technical articles and tutorials on Data Science, AI, and Software Engineering. Sharing knowledge and insights from real-world projects and experiments.",
-        tags: ["Technical Writing", "Data Science", "AI", "Tutorials"],
-        links: { demo: "https://shaokiat.github.io/shaokiat-blog/blog/", github: "#" },
+        problem:
+            "Solutions engineering is half communication: explaining systems clearly to people who didn't build them.",
+        built:
+            "Write-ups on data science, AI and software engineering, based on my own projects and experiments.",
+        tags: ["Technical Writing", "AI", "Data Science"],
         icon: <BookOpen className="w-10 h-10 text-green-400" />,
+        accent: "text-green-400",
         cta: {
-            label: "Explore Articles",
+            label: "Read Articles",
             link: "https://shaokiat.github.io/shaokiat-blog/blog/",
-            type: "blog"
-        }
-    }
+            type: "blog",
+        },
+    },
 ];
 
 export default function Projects() {
@@ -64,27 +79,42 @@ export default function Projects() {
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-4">Technical Projects</h2>
                     <p className="text-gray-400 max-w-2xl mx-auto">
-                        Showcasing simple, scalable solutions to complex problems.
-                        Demonstrating the bridge between raw data and business outcomes.
+                        Side projects, each one starting from a real problem.
                     </p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
                         <motion.div
-                            key={index}
+                            key={project.title}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="group relative p-6 bg-white/5 border border-white/10 rounded-2xl hover:border-blue-500/50 transition-colors backdrop-blur-sm"
+                            className="group relative flex flex-col p-6 bg-white/5 border border-white/10 rounded-2xl hover:border-blue-500/50 transition-colors backdrop-blur-sm"
                         >
                             <div className="mb-4 p-3 bg-blue-500/10 rounded-lg w-fit group-hover:bg-blue-500/20 transition-colors">
                                 {project.icon}
                             </div>
 
-                            <h3 className="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">{project.title}</h3>
-                            <p className="text-gray-400 mb-6 text-sm leading-relaxed">{project.description}</p>
+                            <h3 className="text-xl font-bold mb-4 group-hover:text-blue-400 transition-colors">
+                                {project.title}
+                            </h3>
+
+                            <div className="space-y-4 mb-6 flex-grow">
+                                <div>
+                                    <p className={`text-xs font-semibold uppercase tracking-widest ${project.accent} mb-1.5`}>
+                                        Problem
+                                    </p>
+                                    <p className="text-gray-400 text-sm leading-relaxed">{project.problem}</p>
+                                </div>
+                                <div>
+                                    <p className={`text-xs font-semibold uppercase tracking-widest ${project.accent} mb-1.5`}>
+                                        Built
+                                    </p>
+                                    <p className="text-gray-300 text-sm leading-relaxed">{project.built}</p>
+                                </div>
+                            </div>
 
                             <div className="flex flex-wrap gap-2 mb-6">
                                 {project.tags.map((tag) => (
@@ -94,23 +124,21 @@ export default function Projects() {
                                 ))}
                             </div>
 
-                            <div className="flex items-center gap-4 mt-auto">
-                                {project.cta && (
-                                    <a
-                                        href={project.cta.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={`w-full py-3 px-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 group/btn ${project.cta.type === "blog"
-                                            ? "bg-green-500/10 border border-green-500/20 text-green-400 hover:bg-green-500/20"
-                                            : "bg-purple-500/10 border border-purple-500/20 text-purple-400 hover:bg-purple-500/20"
-                                            }`}
-                                    >
-                                        {project.cta.type === "github" && <Github className="w-4 h-4" />}
-                                        {project.cta.label}
-                                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                                    </a>
-                                )}
-                            </div>
+                            {project.cta && (
+                                <a
+                                    href={project.cta.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`w-full py-3 px-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 group/btn ${project.cta.type === "blog"
+                                        ? "bg-green-500/10 border border-green-500/20 text-green-400 hover:bg-green-500/20"
+                                        : "bg-purple-500/10 border border-purple-500/20 text-purple-400 hover:bg-purple-500/20"
+                                        }`}
+                                >
+                                    {project.cta.type === "github" && <Github className="w-4 h-4" />}
+                                    {project.cta.label}
+                                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                                </a>
+                            )}
                         </motion.div>
                     ))}
                 </div>

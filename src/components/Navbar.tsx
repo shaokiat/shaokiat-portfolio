@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
-import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function Navbar() {
     return (
@@ -17,21 +17,29 @@ export default function Navbar() {
                 </Link>
 
                 <div className="hidden md:flex items-center gap-8">
-                    <Link href="#about" className="text-sm text-gray-400 hover:text-white transition-colors">About</Link>
+                    <Link href="#work" className="text-sm text-gray-400 hover:text-white transition-colors">How I Work</Link>
                     <Link href="#experience" className="text-sm text-gray-400 hover:text-white transition-colors">Experience</Link>
                     <Link href="#projects" className="text-sm text-gray-400 hover:text-white transition-colors">Projects</Link>
                     <Link href="#skills" className="text-sm text-gray-400 hover:text-white transition-colors">Skills</Link>
                     <Link href="#contact" className="text-sm text-gray-400 hover:text-white transition-colors">Contact</Link>
+                    <a
+                        href={`${basePath}/ShaoKiat_Resume.pdf`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 hover:bg-blue-500/20 transition-colors"
+                    >
+                        Resume
+                    </a>
                 </div>
 
                 <div className="flex items-center gap-4">
-                    <a href="https://github.com/shaokiat" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                    <a href="https://github.com/shaokiat" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-400 hover:text-white transition-colors">
                         <Github className="w-5 h-5" />
                     </a>
-                    <a href="https://www.linkedin.com/in/shaokiat/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                    <a href="https://www.linkedin.com/in/shaokiat/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition-colors">
                         <Linkedin className="w-5 h-5" />
                     </a>
-                    <a href="mailto:shaokiat@gmail.com" className="text-gray-400 hover:text-white transition-colors">
+                    <a href="mailto:shaokiat@gmail.com" aria-label="Email" className="text-gray-400 hover:text-white transition-colors">
                         <Mail className="w-5 h-5" />
                     </a>
                 </div>

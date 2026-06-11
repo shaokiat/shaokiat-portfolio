@@ -5,20 +5,20 @@ import { BadgeCheck, Clock } from "lucide-react";
 
 const skills = [
     {
-        category: "AI & Data Science",
-        items: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Ultralytics", "LLMs (Gemini, OpenAI)", "RAG", "Agentic Workflows"]
+        category: "LLM & Agent Engineering",
+        items: ["Anthropic API", "OpenAI / Gemini", "RAG", "DSPy", "Agentic Workflows", "Tool Use", "Prompt Optimization"]
+    },
+    {
+        category: "ML & Data Science",
+        items: ["Python", "PyTorch", "TensorFlow", "Computer Vision (OpenCV, Ultralytics)", "Time-Series Forecasting", "SQL"]
     },
     {
         category: "Cloud & Infrastructure",
-        items: ["GCP (VertexAI, BigQuery, Cloud Run, GCS)", "Docker", "FastAPI", "CI/CD", "REST APIs", "System Design"]
+        items: ["GCP (Vertex AI, BigQuery, Cloud Run, GKE, GCS)", "Docker", "FastAPI", "CI/CD", "REST APIs", "System Design"]
     },
     {
-        category: "Engineering & Web",
-        items: ["Next.js", "TypeScript", "SQL", "Git", "Full Stack"]
-    },
-    {
-        category: "Solutions & Leadership",
-        items: ["Solution Architecture", "Technical Discovery", "Requirement Gathering", "Proof of Concept Design", "Stakeholder Management", "Cross-functional Leadership", "Client Delivery"]
+        category: "Customer-Facing",
+        items: ["Technical Discovery", "Solution Architecture", "POC Design", "Stakeholder Management", "Requirement Gathering", "Cross-functional Leadership"]
     }
 ];
 
@@ -45,7 +45,7 @@ export default function Skills() {
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-4">Skills & Credentials</h2>
                     <p className="text-gray-400 max-w-xl">
-                        A hybrid skillset spanning AI engineering, cloud architecture, and client-facing solution design.
+                        The stack I work with day to day.
                     </p>
                 </motion.div>
 

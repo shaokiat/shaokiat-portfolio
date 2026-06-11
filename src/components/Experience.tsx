@@ -7,18 +7,18 @@ const experiences = [
     {
         role: "Data Scientist II",
         company: "Micron Semiconductor Asia",
-        period: "Jul 2022 – Present",
+        period: "Jul 2023 – Present",
         groups: [
             {
                 label: "Solution Architecture & Delivery",
                 bullets: [
-                    "Led a 6-member cross-functional team to architect and ship a production computer vision platform for photolithography defect detection on GKE — end-to-end from problem framing and system design to stakeholder alignment and rollout.",
+                    "Led a 6-member cross-functional team that built and shipped a production computer vision platform for photolithography defect detection on GKE, covering problem framing, system design, stakeholder alignment and rollout.",
                 ]
             },
             {
                 label: "ML Engineering",
                 bullets: [
-                    "Designed a time-series predictive maintenance pipeline on GCP Cloud Run — model predicts 10%+ consumable lifetime extension, equivalent to ~$2M annual savings at full rollout.",
+                    "Designed a time-series predictive maintenance pipeline on GCP Cloud Run. The model predicts 10%+ consumable lifetime extension, worth about $2M in annual savings at full rollout.",
                     "Designed BigQuery schemas and SQL pipelines for ML feature engineering and cross-team self-service analytics.",
                 ]
             },
@@ -34,13 +34,13 @@ const experiences = [
     {
         role: "Software Engineer",
         company: "Angsana Technology",
-        period: "Aug 2021 – Jul 2022",
+        period: "Aug 2022 – Jul 2023",
         groups: [
             {
                 label: "Client Delivery",
                 bullets: [
-                    "Translated MPA Singapore client specifications into a production digitalization platform, owning the full delivery lifecycle from requirements through deployment.",
-                    "Spearheaded CI/CD implementation with GitHub Actions, automating testing pipelines and ensuring seamless deployment cycles.",
+                    "Built a production digitalization platform from MPA Singapore's client specifications, handling the project from requirements through deployment.",
+                    "Set up CI/CD with GitHub Actions, automating testing and deployments for the team.",
                 ]
             }
         ],
@@ -58,9 +58,9 @@ export default function Experience() {
                     viewport={{ once: true }}
                     className="mb-16 text-center"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Professional Journey</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Experience</h2>
                     <p className="text-gray-400">
-                        Building the technical foundation for solving real business problems.
+                        Where I&apos;ve worked and what I shipped.
                     </p>
                 </motion.div>
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, MessageSquare } from "lucide-react";
+import { ArrowRight, MessageSquare } from "lucide-react";
 
 export default function Contact() {
     return (
@@ -15,12 +15,15 @@ export default function Contact() {
                 >
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm mb-6">
                         <MessageSquare className="w-4 h-4" />
-                        Let's Talk Business
+                        Open to Opportunities
                     </div>
 
-                    <h2 className="text-3xl md:text-5xl font-bold mb-6">Let's Collaborate</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                        Exploring forward deployed &amp; solutions engineering roles in AI.
+                    </h2>
                     <p className="text-gray-400 mb-8 text-lg">
-                        I combine the technical depth of a Data Scientist with the strategic mindset of a AI Engineer to deliver impactful AI solutions.
+                        If your team needs someone technical who is comfortable in front
+                        of customers, let&apos;s talk.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

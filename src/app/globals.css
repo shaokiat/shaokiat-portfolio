@@ -4,23 +4,23 @@
   /* HSL values for better alpha transparency support if needed, but keeping hex for simplicity with v4 var linking if strict */
   --background: #030712; /* Gray 950 */
   --foreground: #f9fafb; /* Gray 50 */
-  
+
   --primary: #3b82f6; /* Blue 500 */
   --primary-foreground: #ffffff;
-  
+
   --secondary: #1e293b; /* Gray 800 */
   --secondary-foreground: #f8fafc; /* Gray 50 */
-  
+
   --muted: #111827; /* Gray 900 */
   --muted-foreground: #9ca3af; /* Gray 400 */
-  
+
   --accent: #2563eb; /* Blue 600 */
   --accent-foreground: #ffffff;
-  
+
   --border: #1f2937; /* Gray 800 */
-  
+
   --font-sans: var(--font-outfit);
-  --font-mono: var(--font-inter); /* Using Inter as 'mono' or secondary sans for now, or real mono if needed */
+  --font-mono: var(--font-inter);
 }
 
 @theme inline {
@@ -35,7 +35,7 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-border: var(--border);
-  
+
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
 }
