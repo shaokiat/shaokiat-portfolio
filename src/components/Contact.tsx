@@ -18,12 +18,13 @@ export default function Contact() {
                         Open to Opportunities
                     </div>
 
-                    <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                    <h2 className="text-2xl md:text-4xl font-semibold mb-4">
                         Exploring forward deployed &amp; solutions engineering roles in AI.
                     </h2>
-                    <p className="text-gray-400 mb-8 text-lg">
-                        If your team needs someone technical who is comfortable in front
-                        of customers, let&apos;s talk.
+                    <p className="text-gray-400 mb-8 text-base md:text-lg">
+                        I&apos;m looking for a role where the ML/DS depth is a differentiator,
+                        not the job description. I want to be the one in the room with the
+                        customer, not three steps removed from them.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

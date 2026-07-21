@@ -10,26 +10,31 @@ const experiences = [
         period: "Jul 2023 – Present",
         groups: [
             {
-                label: "Solution Architecture & Delivery",
+                label: "Predictive Maintenance Platform",
                 bullets: [
-                    "Led a 6-member cross-functional team that built and shipped a production computer vision platform for photolithography defect detection on GKE, covering problem framing, system design, stakeholder alignment and rollout.",
+                    "Built a model that tells engineers when a part is about to fail. Then spent two months earning the right for anyone to actually trust it. Now projected at ~$2M/year in savings, validated by the global SPARES team.",
                 ]
             },
             {
-                label: "ML Engineering",
+                label: "Computer Vision Defect Detection",
                 bullets: [
-                    "Designed a time-series predictive maintenance pipeline on GCP Cloud Run. The model predicts 10%+ consumable lifetime extension, worth about $2M in annual savings at full rollout.",
-                    "Designed BigQuery schemas and SQL pipelines for ML feature engineering and cross-team self-service analytics.",
+                    "Led a 6-person team across 4 countries to catch photolithography defects automatically, including generating our own training data for defects too rare to have enough real examples of.",
                 ]
             },
             {
-                label: "POC & Tooling",
+                label: "Self-Serve Labeling Platform",
                 bullets: [
-                    "Built a self-serve defect annotation platform (Streamlit + Label Studio), eliminating data scientist dependency from retraining cycles.",
+                    "Built a 2-week prototype to unblock engineers from waiting on a data scientist for every label. It worked so well it became the production system, unplanned.",
+                ]
+            },
+            {
+                label: "IIoT Edge Systems",
+                bullets: [
+                    "Architected the sensor pipeline from scratch: air-gapped edge devices, real-time ingestion, zero prior infrastructure to build on.",
                 ]
             }
         ],
-        skills: ["Python", "GKE", "GCP", "BigQuery", "SQL", "Computer Vision", "Solution Architecture", "Stakeholder Mgmt"]
+        skills: ["Python", "GKE", "GCP", "BigQuery", "SQL", "Computer Vision", "IIoT / Edge", "Solution Architecture", "Stakeholder Mgmt"]
     },
     {
         role: "Software Engineer",

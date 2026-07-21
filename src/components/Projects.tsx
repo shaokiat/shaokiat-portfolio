@@ -19,32 +19,32 @@ interface Project {
 
 const projects: Project[] = [
     {
-        title: "theta-agent",
+        title: "Configent",
         problem:
-            "Researching an options trade means juggling price data, news, chains and greeks across half a dozen tabs, every single time.",
+            "Every RAG agent I'd built was single-purpose. New client meant new code. That doesn't scale past one demo.",
         built:
-            "A CLI agent on the Anthropic API that researches a ticker on its own via tool calls (live prices, news, options chains and greeks through yfinance) and proposes a concrete strategy. It keeps per-ticker memory of past sessions and positions, so each new run picks up where the last one left off.",
-        tags: ["AI Agent", "Anthropic API", "Tool Use", "Python", "Options Greeks"],
-        icon: <BarChart3 className="w-10 h-10 text-blue-400" />,
-        accent: "text-blue-400",
+            "A config-driven multi-tenant RAG platform: FastAPI, pgvector, SSE streaming, Next.js. Persona, knowledge base and retrieval settings are all config, not code. Built end-to-end, AI-assisted, in about a week.",
+        tags: ["FastAPI", "pgvector", "RAG", "SSE Streaming", "Next.js", "Multi-tenant Architecture"],
+        icon: <Brain className="w-10 h-10 text-purple-400" />,
+        accent: "text-purple-400",
         cta: {
-            label: "View Code",
-            link: "#",
+            label: "View Live",
+            link: "https://shaokiat.github.io/configent/",
             type: "github",
         },
     },
     {
-        title: "BTO Grant & Eligibility Assistant",
+        title: "agentic-cookbook",
         problem:
-            "HDB BTO grants and eligibility rules are a maze. Most applicants can't tell what they qualify for without reading dozens of policy pages.",
+            "Every agent I built started as a one-off script with its own harness. I wanted one place to iterate on agent patterns instead of rebuilding it each time.",
         built:
-            "A RAG assistant whose pipeline is tuned with DSPy's automated prompt optimization instead of hand-written prompts. I built it to see how far that approach could go compared to manual prompt engineering.",
-        tags: ["DSPy", "RAG", "Prompt Optimization", "Python"],
-        icon: <Brain className="w-10 h-10 text-purple-400" />,
-        accent: "text-purple-400",
+            "A collection of agents built directly on raw tool-use APIs, not framework abstractions. Includes theta-agent, an autonomous options research agent with live market data via yfinance and persistent memory across sessions. Each new agent tests a different pattern before I decide what's worth production-hardening.",
+        tags: ["Anthropic API", "Tool Use", "AI Agents", "Python", "Options Greeks"],
+        icon: <BarChart3 className="w-10 h-10 text-blue-400" />,
+        accent: "text-blue-400",
         cta: {
             label: "View Code",
-            link: "#",
+            link: "https://github.com/shaokiat/agentic-cookbook",
             type: "github",
         },
     },
