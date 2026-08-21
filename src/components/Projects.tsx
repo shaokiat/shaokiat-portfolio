@@ -59,7 +59,7 @@ const projects: Project[] = [
         accent: "text-green-400",
         cta: {
             label: "Read Articles",
-            link: "https://shaokiat.github.io/shaokiat-blog/blog/",
+            link: "https://shaokiat.github.io/shaokiat-blog/",
             type: "blog",
         },
     },
