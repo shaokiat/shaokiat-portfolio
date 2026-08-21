@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 const stats = [
     { value: "~$2M", label: "annual savings from one ML pipeline", color: "text-blue-400" },
-    { value: "6", label: "engineers led to production", color: "text-purple-400" },
     { value: "3 yrs", label: "shipping ML on GCP", color: "text-green-400" },
 ];
 
