@@ -62,19 +62,19 @@ export default function Hero() {
                             trust it over their own instincts took longer.
                         </p>
 
-                        <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-2 gap-y-1 text-sm text-gray-400 mb-2">
+                        <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-2 gap-y-1 text-sm text-gray-300 mb-2">
                             <span>🏂 Snowboarding</span>
-                            <span className="text-gray-600">·</span>
+                            <span className="text-gray-500">·</span>
                             <span>🏍️ Motorcycling</span>
-                            <span className="text-gray-600">·</span>
+                            <span className="text-gray-500">·</span>
                             <span>🎾 Tennis</span>
-                            <span className="text-gray-600">·</span>
+                            <span className="text-gray-500">·</span>
                             <span>🤿 Diving</span>
-                            <span className="text-gray-600">·</span>
+                            <span className="text-gray-500">·</span>
                             <span>📱 Photography</span>
                         </div>
 
-                        <p className="text-sm text-gray-400 mb-6 max-w-xl mx-auto md:mx-0">
+                        <p className="text-sm text-gray-300 mb-6 max-w-xl mx-auto md:mx-0">
                             By day I build systems people can trust. By weekend I&apos;m on
                             two wheels or underwater, actively testing how much I trust
                             myself.

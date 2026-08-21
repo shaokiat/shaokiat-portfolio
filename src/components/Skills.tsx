@@ -34,7 +34,7 @@ export default function Skills() {
                     className="mb-10 text-center"
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-4">Skills & Credentials</h2>
-                    <p className="text-gray-400 max-w-xl mx-auto">
+                    <p className="text-gray-300 max-w-xl mx-auto">
                         The stack I work with day to day.
                     </p>
                 </motion.div>

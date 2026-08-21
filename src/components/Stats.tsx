@@ -22,7 +22,7 @@ export default function Stats() {
                     {stats.map((stat) => (
                         <div key={stat.value} className="flex flex-col items-center gap-1 max-w-[220px] mx-auto sm:mx-0">
                             <span className={`text-3xl font-bold ${stat.color}`}>{stat.value}</span>
-                            <span className="text-xs text-gray-500 leading-snug">{stat.label}</span>
+                            <span className="text-xs text-gray-400 leading-snug">{stat.label}</span>
                         </div>
                     ))}
                 </motion.div>

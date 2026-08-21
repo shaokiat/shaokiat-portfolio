@@ -70,7 +70,7 @@ export default function Experience() {
                     className="mb-16 text-center"
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-4">Experience</h2>
-                    <p className="text-gray-400">
+                    <p className="text-gray-300">
                         Where I&apos;ve worked and what I shipped.
                     </p>
                 </motion.div>
@@ -100,7 +100,7 @@ export default function Experience() {
                                         {exp.period}
                                     </div>
                                 </div>
-                                <div className="flex items-center gap-2 text-gray-400 text-sm mb-6">
+                                <div className="flex items-center gap-2 text-gray-300 text-sm mb-6">
                                     <Briefcase className="w-4 h-4" />
                                     {exp.company}
                                 </div>

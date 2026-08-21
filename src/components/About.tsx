@@ -56,7 +56,7 @@ export default function About() {
                         How I Work
                     </h2>
 
-                    <div className="prose prose-invert prose-lg text-gray-400">
+                    <div className="prose prose-invert prose-lg text-gray-300">
                         <p>
                             Most of the work in shipping AI happens outside the model.
                             Here&apos;s how I usually go about it.
@@ -77,8 +77,8 @@ export default function About() {
                                     {step.icon}
                                     <h4 className="font-bold text-white">{step.title}</h4>
                                 </div>
-                                <p className="text-sm text-gray-300 mb-2">{step.summary}</p>
-                                <p className="text-sm text-gray-500 leading-relaxed">{step.receipt}</p>
+                                <p className="text-sm text-gray-200 mb-2">{step.summary}</p>
+                                <p className="text-sm text-gray-300 leading-relaxed">{step.receipt}</p>
                             </motion.div>
                         ))}
                     </div>

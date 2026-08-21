@@ -21,7 +21,7 @@ export default function Contact() {
                     <h2 className="text-2xl md:text-4xl font-semibold mb-4">
                         Exploring forward deployed &amp; solutions engineering roles in AI.
                     </h2>
-                    <p className="text-gray-400 mb-8 text-base md:text-lg">
+                    <p className="text-gray-300 mb-8 text-base md:text-lg">
                         I&apos;m looking for a role where production ML/infra depth is the
                         differentiator, not the job description. I want to be the one in the
                         room proving the system works, running the benchmark, not three steps

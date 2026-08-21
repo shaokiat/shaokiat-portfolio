@@ -78,7 +78,7 @@ export default function Projects() {
                     className="mb-16 text-center"
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-4">Technical Projects</h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
+                    <p className="text-gray-300 max-w-2xl mx-auto">
                         Side projects, each one starting from a real problem.
                     </p>
                 </motion.div>
@@ -106,7 +106,7 @@ export default function Projects() {
                                     <p className={`text-xs font-semibold uppercase tracking-widest ${project.accent} mb-1.5`}>
                                         Problem
                                     </p>
-                                    <p className="text-gray-400 text-sm leading-relaxed">{project.problem}</p>
+                                    <p className="text-gray-300 text-sm leading-relaxed">{project.problem}</p>
                                 </div>
                                 <div>
                                     <p className={`text-xs font-semibold uppercase tracking-widest ${project.accent} mb-1.5`}>
