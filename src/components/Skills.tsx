@@ -8,7 +8,7 @@ const skillGroups = [
         category: "Technical",
         items: [
             "Python", "PyTorch / TensorFlow", "Computer Vision", "Time-Series Forecasting",
-            "SQL", "GCP (Vertex AI, BigQuery, GKE)", "RAG & Agentic Workflows", "Solution Architecture"
+            "SQL", "GCP (Vertex AI, BigQuery, GKE / Kubernetes)", "RAG & Agentic Workflows", "Solution Architecture"
         ],
         label: "text-blue-400",
         tag: "bg-blue-500/10 border-blue-500/20 text-blue-100",
@@ -20,8 +20,6 @@ const skillGroups = [
         tag: "bg-purple-500/10 border-purple-500/20 text-purple-100",
     }
 ];
-
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function Skills() {
     return (
@@ -74,23 +72,6 @@ export default function Skills() {
                         </div>
                     </div>
                 </motion.div>
-
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    className="mt-8 text-sm text-gray-500 text-center"
-                >
-                    Full stack & experience details in the{" "}
-                    <a
-                        href={`${basePath}/ShaoKiat_Resume.pdf`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-400 hover:text-blue-300 underline underline-offset-2"
-                    >
-                        resume
-                    </a>.
-                </motion.p>
             </div>
         </section>
     );

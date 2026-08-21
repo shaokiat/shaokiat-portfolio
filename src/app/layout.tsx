@@ -19,7 +19,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 export const metadata: Metadata = {
   title: "Shao Kiat | Forward Deployed Engineer",
   description:
-    "Shao Kiat is a forward deployed / solutions engineer focused on AI. Data scientist at Micron shipping production ML and LLM systems on GCP, from stakeholder discovery to deployed infrastructure.",
+    "Shao Kiat is a forward deployed / solutions engineer focused on AI. AI engineer at Micron shipping production ML and LLM systems on GCP, from stakeholder discovery to deployed infrastructure.",
   keywords: [
     "Forward Deployed Engineer",
     "Solutions Engineer",

@@ -22,9 +22,10 @@ export default function Contact() {
                         Exploring forward deployed &amp; solutions engineering roles in AI.
                     </h2>
                     <p className="text-gray-400 mb-8 text-base md:text-lg">
-                        I&apos;m looking for a role where the ML/DS depth is a differentiator,
-                        not the job description. I want to be the one in the room with the
-                        customer, not three steps removed from them.
+                        I&apos;m looking for a role where production ML/infra depth is the
+                        differentiator, not the job description. I want to be the one in the
+                        room proving the system works, running the benchmark, not three steps
+                        removed from the customer.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

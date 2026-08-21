@@ -5,26 +5,32 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
     {
-        role: "Data Scientist II",
+        role: "AI Engineer II",
         company: "Micron Semiconductor Asia",
         period: "Jul 2023 – Present",
         groups: [
             {
+                label: "Custom Opencode Skills for ML Delivery",
+                bullets: [
+                    "Built customized skills in Opencode to run full end-to-end modeling and deployment workflows on GCP, from data validation through training to production deployment, with guardrails to keep AI-assisted output at production quality. Cut model onboarding from ~2 weeks to 4 days, about 3x faster.",
+                ]
+            },
+            {
                 label: "Predictive Maintenance Platform",
                 bullets: [
-                    "Built a model that tells engineers when a part is about to fail. Then spent two months earning the right for anyone to actually trust it. Now projected at ~$2M/year in savings, validated by the global SPARES team.",
+                    "Built a model that tells engineers when a part is about to fail. Then spent two months earning the right for anyone to actually trust it. Now live across 3 workstations, ~$2M/year in realized savings, validated by the global SPARES team.",
                 ]
             },
             {
                 label: "Computer Vision Defect Detection",
                 bullets: [
-                    "Led a 6-person team across 4 countries to catch photolithography defects automatically, including generating our own training data for defects too rare to have enough real examples of.",
+                    "Led a 6-person team across 4 countries to build and deploy a production vision-inference pipeline for photolithography defect detection, generating our own training data for defects too rare to have enough real examples of.",
                 ]
             },
             {
                 label: "Self-Serve Labeling Platform",
                 bullets: [
-                    "Built a 2-week prototype to unblock engineers from waiting on a data scientist for every label. It worked so well it became the production system, unplanned.",
+                    "Built a 4-week prototype to unblock engineers from waiting on a data scientist for every label. It worked so well it became the production system, unplanned.",
                 ]
             },
             {

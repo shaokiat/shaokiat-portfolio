@@ -9,7 +9,7 @@ const steps = [
         title: "Discover",
         summary: "I start by talking to the people who'll use the system.",
         receipt:
-            "At Micron, I worked out the defect detection problem with fab engineers before any modelling started. At Angsana, I turned MPA Singapore's specifications into a scope we could actually build.",
+            "Maintenance ran on a fixed 3-month schedule regardless of actual wear. Sensor data on real usage told a more accurate story, and it uncovered a 20% underutilization gap. Shared that with engineers before building anything, they agreed the problem was real first.",
         border: "border-blue-500",
         bg: "bg-blue-500/5",
     },
@@ -18,7 +18,7 @@ const steps = [
         title: "Prototype",
         summary: "I get a working version in front of stakeholders early.",
         receipt:
-            "Recent examples: a RAG assistant tuned with DSPy, and a CLI agent on the Anthropic API that researches options trades with live market data.",
+            "Built a simple model that predicts wear from actual usage instead of the calendar, one engineers could question. They needed to see why a prediction was made, not just get an alert to blindly trust.",
         border: "border-purple-500",
         bg: "bg-purple-500/5",
     },
@@ -27,7 +27,7 @@ const steps = [
         title: "Productionize",
         summary: "Then I ship it on proper infrastructure.",
         receipt:
-            "The computer vision platform runs on GKE. The predictive maintenance pipeline runs on Cloud Run, fed by BigQuery pipelines and deployed through CI/CD.",
+            "Spent 2 months validating against real failures before replacing the fixed schedule with the model. Runs on GCP with automated pipelines and scheduled jobs, no manual babysitting required.",
         border: "border-green-500",
         bg: "bg-green-500/5",
     },
@@ -36,7 +36,7 @@ const steps = [
         title: "Enable",
         summary: "I hand off systems that don't need me around.",
         receipt:
-            "I built an annotation platform (Streamlit + Label Studio) so engineers retrain models without a data scientist in the loop, and BigQuery schemas other teams use to pull their own analytics.",
+            "Now live across 3 workstations, parts replaced based on real usage instead of a fixed calendar, engineers acting on alerts without me in the loop. About $2M a year in savings, confirmed by our own SPARES team.",
         border: "border-orange-500",
         bg: "bg-orange-500/5",
     },

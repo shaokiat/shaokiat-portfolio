@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 glass border-b-white/5">
@@ -22,14 +20,6 @@ export default function Navbar() {
                     <Link href="#projects" className="text-sm text-gray-400 hover:text-white transition-colors">Projects</Link>
                     <Link href="#skills" className="text-sm text-gray-400 hover:text-white transition-colors">Skills</Link>
                     <Link href="#contact" className="text-sm text-gray-400 hover:text-white transition-colors">Contact</Link>
-                    <a
-                        href={`${basePath}/ShaoKiat_Resume.pdf`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 hover:bg-blue-500/20 transition-colors"
-                    >
-                        Resume
-                    </a>
                 </div>
 
                 <div className="flex items-center gap-4">

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, FileText, Cloud } from "lucide-react";
+import { ArrowRight, Cloud } from "lucide-react";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -88,15 +88,6 @@ export default function Hero() {
                                 See how I work
                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </Link>
-                            <a
-                                href={`${basePath}/ShaoKiat_Resume.pdf`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="px-8 py-3 bg-white/5 border border-white/10 text-white rounded-lg font-medium hover:bg-white/10 transition-colors backdrop-blur-sm flex items-center gap-2"
-                            >
-                                <FileText className="w-4 h-4" />
-                                Resume
-                            </a>
                         </div>
                     </motion.div>
                 </div>
