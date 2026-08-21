@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Cloud } from "lucide-react";
+import { ArrowRight, BadgeCheck, BrainCircuit } from "lucide-react";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -39,9 +39,15 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="text-center md:text-left order-2 md:order-1"
                     >
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-200 mb-4 backdrop-blur-sm">
-                            <Cloud className="w-3 h-3 text-blue-400" />
-                            Forward Deployed Engineer · AI
+                        <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 mb-4">
+                            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-200 backdrop-blur-sm">
+                                <BrainCircuit className="w-3.5 h-3.5 text-blue-400" />
+                                AI Engineer
+                            </span>
+                            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-sm text-green-100 backdrop-blur-sm">
+                                <BadgeCheck className="w-3 h-3 text-green-400" />
+                                GCP Professional Cloud Architect
+                            </span>
                         </div>
 
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
